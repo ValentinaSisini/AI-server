@@ -26,3 +26,10 @@ gcloud compute firewall-rules create allow-ssh \
 
 # SSH
 gcloud compute ssh ai-stack
+
+Crea una cartella “progetto” dove teneremo tutto:
+
+```
+mkdir -p ~/ai-stack/{services,src,data}
+cd ~/ai-stack
+```

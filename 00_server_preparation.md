@@ -27,6 +27,23 @@ gcloud compute firewall-rules create allow-ssh \
 # SSH
 gcloud compute ssh ai-stack
 
+
+Pacchetti di base nella VM
+```
+sudo apt update
+sudo apt upgrade -y
+
+sudo apt install -y \
+  build-essential \
+  git \
+  python3-venv \
+  python3-pip \
+  ffmpeg \
+  curl \
+  unzip \
+  htop
+```
+
 Crea una cartella “progetto” dove teneremo tutto:
 
 ```
